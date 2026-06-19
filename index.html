@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Portfolio | Eugene Onyango</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="scroll-progress"></div>
+
+    <!-- Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">PORT<span>FOLIO</span></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="search">
+                <input class="srch" type="search" placeholder="Search...">
+                <button class="btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <button id="hamburger"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="content" data-aos="fade-up">
+            <h1>Hi, I'm <span>EUGENE ONYANGO</span></h1>
+            <h3 class="typing-text">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+            <p class="paragraph">Computer Science Student specialized in building scalable web applications and AI-driven solutions.</p>
+            <div class="hero-btns">
+                <button class="cn"><a href="#projects">VIEW MY WORK</a></button>
+                <button class="cn-outline"><a href="#" download>DOWNLOAD CV <i class="fas fa-download"></i></a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section class="stats">
+        <div class="stat-item" data-aos="zoom-in">
+            <h2 class="counter" data-target="15">0</h2>
+            <p>Projects Finished</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+            <h2 class="counter" data-target="10">0</h2>
+            <p>Certifications</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Git Commits</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+            <h2 class="counter" data-target="5">0</h2>
+            <p>Happy Clients</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title" data-aos="fade-up">ABOUT <span>ME</span></h2>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right">
+                <div class="img-box">
+                    <img src="photo.jpg" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <p>I am a final year Computer Science student. I specialize in Software Engineering and Data Science. My journey in tech started with a curiosity for how things work under the hood, leading me to master several programming languages and frameworks.</p>
+                <div class="personal-info">
+                    <p><strong>Education:</strong> B.S. in Computer Science</p>
+                    <p><strong>Location:</strong> Nairobi, Kenya</p>
+                    <p><strong>Freelance:</strong> Available</p>
+                </div>
+                <div class="interests">
+                    <span class="interest-tag">Machine Learning</span>
+                    <span class="interest-tag">Cybersecurity</span>
+                    <span class="interest-tag">Cloud Architecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Education Timeline -->
+    <section id="experience" class="section bg-alt">
+        <h2 class="section-title" data-aos="fade-up">EXPERIENCE AND <span>EDUCATION</span></h2>
+        <div class="timeline">
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>Software Engineer Intern</h3>
+                    <span class="date">2023 - Present</span>
+                    <p>TechCorp Solutions - Developed front-end components using React and optimized SQL queries.</p>
+                </div>
+            </div>
+            <div class="timeline-item left" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>Freelance Web Developer</h3>
+                    <span class="date">2021 - 2022</span>
+                    <p>Built over 10 responsive websites for local businesses using HTML, CSS, and JS.</p>
+                </div>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>B.S. Computer Science</h3>
+                    <span class="date">2020 - 2024</span>
+                    <p>University of Technology - Specialized in Systems Design and Algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title" data-aos="fade-up">TECHNICAL <span>SKILLS</span></h2>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="flip-left"><i class="fab fa-python"></i> <h3>Python</h3><div class="skill-level"><div class="level-bar" style="width: 90%;"></div></div></div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="100"><i class="fab fa-js"></i> <h3>JavaScript</h3><div class="skill-level"><div class="level-bar" style="width: 85%;"></div></div></div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="200"><i class="fab fa-react"></i> <h3>React</h3><div class="skill-level"><div class="level-bar" style="width: 80%;"></div></div></div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="300"><i class="fas fa-database"></i> <h3>SQL</h3><div class="skill-level"><div class="level-bar" style="width: 75%;"></div></div></div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="400"><i class="fab fa-java"></i> <h3>Java</h3><div class="skill-level"><div class="level-bar" style="width: 70%;"></div></div></div>
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="500"><i class="fab fa-git-alt"></i> <h3>Git</h3><div class="skill-level"><div class="level-bar" style="width: 95%;"></div></div></div>
+            </div>
+
+            <!-- Coding Profiles -->
+            <div class="coding-profiles" data-aos="fade-up">
+                <h3>CODING <span>PROFILES</span></h3>
+                <div class="profile-links">
+                    <a href="#" title="LeetCode"><i class="fas fa-code"></i></a>
+                    <a href="#" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="CodeChef"><i class="fas fa-terminal"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-alt">
+        <h2 class="section-title" data-aos="fade-up">FEATURED <span>PROJECTS</span></h2>
+        <div class="projects-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="apps">Apps</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card web" data-aos="zoom-in">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 1">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack store with payment integration.</p>
+                    <div class="tags"><span>React</span> <span>Node.js</span></div>
+                </div>
+            </div>
+            <div class="project-card ai" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 2">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI Facial Recognition</h3>
+                    <p>Python-based security system using OpenCV.</p>
+                    <div class="tags"><span>Python</span> <span>OpenCV</span></div>
+                </div>
+            </div>
+            <div class="project-card apps" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 3">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>Cross-platform productivity tool.</p>
+                    <div class="tags"><span>Flutter</span> <span>Firebase</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section id="other-work" class="section bg-alt" style="padding-top: 0;">
+        <h2 class="section-title" data-aos="fade-up">OTHER <span>PROJECTS</span></h2>
+        <div class="projects-grid">
+            <div class="project-card ai" data-aos="zoom-in">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="AeroForge Systems">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Eugene/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AeroForge Systems</h3>
+                    <p>Advanced aerospace engineering and AI-driven structural design platform.</p>
+                    <div class="tags"><span>Aerospace</span> <span>AI</span></div>
+                </div>
+            </div>
+            <div class="project-card apps" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hardware Hub">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Onyango/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Hardware Hub</h3>
+                    <p>Educational guide on computer components and architectures.</p>
+                    <div class="tags"><span>Hardware</span> <span>Education</span></div>
+                </div>
+            </div>
+            <div class="project-card web" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Eugene Technologies">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Masaibu/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Eugene Technologies</h3>
+                    <p>Scalable web solutions and enterprise-grade system platform.</p>
+                    <div class="tags"><span>Web Dev</span> <span>UI/UX</span></div>
+                </div>
+            </div>
+            <div class="project-card web" data-aos="zoom-in">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pioneer Portal">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Metropolitan/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Pioneer Portal</h3>
+                    <p>Advanced Computer Science fundamentals and research platform.</p>
+                    <div class="tags"><span>CS</span> <span>Algorithms</span></div>
+                </div>
+            </div>
+            <div class="project-card web" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tech Store">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Rufus/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Eugene Tech Store</h3>
+                    <p>E-commerce platform for high-performance computing hardware.</p>
+                    <div class="tags"><span>E-Commerce</span> <span>Workstations</span></div>
+                </div>
+            </div>
+            <div class="project-card apps" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="ElectriMedia">
+                    <div class="overlay">
+                        <div class="project-links">
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://onyangoeugene690-prog.github.io/Ringtone/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>ElectriMedia</h3>
+                    <p>Comprehensive digital guide to power systems and renewable energy.</p>
+                    <div class="tags"><span>Electrical</span> <span>Renewables</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <h2 class="section-title" data-aos="fade-up">WHAT <span>PEOPLE SAY</span></h2>
+        <div class="testimonials-container" data-aos="fade-up">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>Eugene is a brilliant developer who solves problems with great efficiency. Highly recommended!</p>
+                <div class="user-info">
+                    <h4>Brian Kaloki</h4>
+                    <span>CEO, Tech Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <h2 class="section-title" data-aos="fade-up">GET IN <span>TOUCH</span></h2>
+        <div class="contact-container">
+            <form id="contact-form" class="form" data-aos="fade-right">
+                <h2>Message Me</h2>
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btnn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-info" data-aos="fade-left">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>eugene@example.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/254700000000" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title" data-aos="fade-up">MY <span>SERVICES</span></h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="zoom-in">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Creating responsive, high-performance websites using the latest technologies.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>App Development</h3>
+                <p>Building cross-platform mobile applications with seamless user experiences.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-brain"></i>
+                <h3>AI & ML Solutions</h3>
+                <p>Integrating artificial intelligence to automate and optimize business processes.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>Ensuring your digital assets are protected with robust security implementations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://wa.me/254700000000" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">PORT<span>FOLIO</span></div>
+            <p>Building the future, one line of code at a time.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Eugene Onyango | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with me</span>
+    </a>
+
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="portfolio.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+            once: true
+        });
+    </script>
+</body>
+</html>
