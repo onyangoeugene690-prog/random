@@ -773,7 +773,8 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
     }
 
     .menu.active ~ .header-right #theme-toggle {
-        left: 20px;
+        left: 10%;
+        top: 450px;
     }
 
     .about-container, .contact-container { flex-direction: column; text-align: center; }
