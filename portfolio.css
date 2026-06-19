@@ -161,7 +161,17 @@ body::after {
 }
 .menu ul li a:hover { color: var(--primary-color); }
 
-.header-right { display: flex; align-items: center; gap: 20px; }
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .header-right {
+        margin-right: 40px; /* Push inside on PC */
+    }
+}
 
 /* Appealing Search Bar */
 .search {
