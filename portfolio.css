@@ -737,6 +737,27 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
 
     .header-right .search { display: none; }
 
+    #theme-toggle {
+        position: fixed;
+        top: 85px;
+        left: -100%;
+        z-index: 1001;
+        background: var(--bg-alt);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .menu.active + .header-right #theme-toggle {
+        left: 20px;
+    }
+
     .about-container, .contact-container { flex-direction: column; text-align: center; }
     .about-image { margin-bottom: 30px; max-width: 300px; margin-left: auto; margin-right: auto; }
     .form { padding: 20px; width: 100%; }
