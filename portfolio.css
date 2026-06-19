@@ -218,11 +218,12 @@ body::after {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 100px 20px;
     background: radial-gradient(circle at center, rgba(255, 165, 0, 0.1) 0%, transparent 70%),
                 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                 url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
@@ -769,9 +770,14 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
     .social-sidebar a:hover { transform: translateY(-5px); }
 
     .whatsapp-float {
-        bottom: 70px;
+        bottom: 80px;
         right: 20px;
         left: auto;
+    }
+
+    #scroll-top {
+        bottom: 140px;
+        right: 20px;
     }
 
     .hero h1 { font-size: 36px; }
@@ -793,6 +799,7 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
 }
 
 @media (max-width: 480px) {
+    .logo { font-size: 22px; }
     .stats { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 32px; }
