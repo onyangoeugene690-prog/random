@@ -15,10 +15,10 @@
     --text-dim: #555;
 }
 
-html {
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -28,8 +28,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    width: 100%;
-    position: relative;
     transition: var(--transition);
     background-image:
         radial-gradient(circle at 10% 20%, rgba(0, 255, 127, 0.05) 0%, transparent 40%),
@@ -161,17 +159,7 @@ body::after {
 }
 .menu ul li a:hover { color: var(--primary-color); }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-@media (min-width: 992px) {
-    .header-right {
-        margin-right: 40px; /* Push inside on PC */
-    }
-}
+.header-right { display: flex; align-items: center; gap: 20px; }
 
 /* Appealing Search Bar */
 .search {
@@ -718,14 +706,7 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        padding: 0 5%;
-        height: 70px;
-        justify-content: space-between;
-        gap: 10px;
-        box-sizing: border-box;
-    }
+    .navbar { padding: 0 5%; height: 70px; justify-content: flex-start; gap: 15px; }
 
     #hamburger { display: block; }
 
@@ -774,7 +755,6 @@ footer { padding: 50px 8% 20px; background: #000; text-align: center; }
 
     .menu.active ~ .header-right #theme-toggle {
         left: 10%;
-        top: 450px;
     }
 
     .about-container, .contact-container { flex-direction: column; text-align: center; }
